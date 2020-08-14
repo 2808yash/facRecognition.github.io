@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 st.title("Face Recognition using OpenCV")
 img=st.file_uploader("Upload any Image here for faces detection", type=("png", "jpg","jpeg"))
-facecascade=cv2.CascadeClassifier('data/haarcascade_frontalface_default.xml')
+facecascade=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 if img is not None:
     imag = Image.open(img)
     st.header("Original Image : ")
